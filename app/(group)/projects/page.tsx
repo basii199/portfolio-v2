@@ -77,16 +77,16 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 dark:text-white text-black">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black">
             Projects
           </h1>
-          <p className="text-xl dark:text-gray-300 text-gray-600 mb-12 max-w-3xl">
+          <p className="text-lg dark:text-gray-300 text-gray-600 mb-12 max-w-3xl">
             A collection of my professional work and personal projects. Each one represents a unique challenge and learning opportunity.
           </p>
         </MotionDiv>
 
         <div className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 dark:text-white text-black">Featured Work</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-8 dark:text-white text-black">Featured Work</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {allProjects
               .filter(project => project.featured)
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 dark:text-white text-black">All Projects</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-8 dark:text-white text-black">All Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {allProjects.map((project, index) => (
               <ProjectCard 

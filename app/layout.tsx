@@ -25,9 +25,7 @@ export default function RootLayout({
           <SmoothScroll>
             <Cursor />
             <Navigation />
-            <main className="pt-8 max-w-[1000px]">
               {children}
-            </main>
           </SmoothScroll>
         </Providers>
       </body>

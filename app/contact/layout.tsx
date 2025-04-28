@@ -1,7 +1,5 @@
 // app/layout.tsx
 
-import { Footer } from "@/components/footer";
-
 export default function RootLayout({
   children,
 }: {
@@ -13,7 +11,6 @@ export default function RootLayout({
       <main className="pt-8 max-w-[1000px]">
         {children}
       </main>
-      <Footer />
     </>
     
   );
