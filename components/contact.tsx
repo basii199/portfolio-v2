@@ -46,7 +46,12 @@ export function Contact() {
   return (
     <section className="container mx-auto">
         <div className="flex flex-col gap-12">
-          <div className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl p-8">
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl p-8">
             <h2 className="text-xl font-semibold mb-6 pb-1 border-b-2 border-gray-200 dark:border-gray-800 w-fit">
               Send a Message
             </h2>
@@ -136,7 +141,7 @@ export function Contact() {
                 </button>
               </div>
             </form>
-          </div>
+          </motion.div>
 
           <motion.div 
             className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl p-8 h-fit"

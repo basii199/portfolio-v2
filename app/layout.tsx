@@ -20,7 +20,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} bg-white dark:bg-black transition-colors duration-300`}>
+      <body className={`${inter.className} bg-white dark:bg-black transition-colors duration-300 h-screen overflow-clip`}>
         <Providers>
           <SmoothScroll>
             <Cursor />

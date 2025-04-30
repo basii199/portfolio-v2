@@ -7,23 +7,10 @@ import Link from 'next/link';
 import { Github, Linkedin, Mail, MessageSquare, Send } from 'lucide-react';
 
 export function Footer() {
-  const [scrolled, setScrolled] = useState(false);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <footer
-      className={`flex backdrop-blur-md transition-colors duration-300 ${
-        scrolled
-          ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
-          : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
-      }`}
+      className='container flex backdrop-blur-md transition-colors duration-300 bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
     >
       <div className="container mx-auto px-4 py-20">
         <div className="grid grid-cols-12 gap-x-0 gap-y-6 sm:gap-12">

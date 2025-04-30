@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Gradific",
     description: "AI-powered grading tool for educators",
-    tags: ["Next.js", "TypeScript", "AI"],
+    tags: ["Next.js", "TypeScript",],
     link: "#",
     images: [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758037/gradific-home_vc4qau.png",

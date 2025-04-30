@@ -5,8 +5,8 @@ import { MotionDiv } from '@/components/motion-div';
 const allProjects = [
   {
     title: "ShopDesk",
-    description: "A simplified inventory management system for small businesses built with Next.js, Redux, TypeScript, and Framer Motion.",
-    tags: ["Next.js", "Redux", "TypeScript", "Framer Motion"],
+    description: "A simplified inventory management system for small businesses built with Next.js, Redux, TypeScript.",
+    tags: ["Next.js", "Redux", "TypeScript"],
     link: "#",
     images: [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758043/shopdesk-home_fxxyma.png",
@@ -17,7 +17,7 @@ const allProjects = [
   {
     title: "Gradific",
     description: "AI-powered grading tool for teachers and lecturers developed with Next.js and TypeScript.",
-    tags: ["Next.js", "TypeScript", "AI"],
+    tags: ["Next.js", "TypeScript"],
     link: "#",
     images: [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758037/gradific-home_vc4qau.png",
@@ -55,14 +55,14 @@ const allProjects = [
   {
     title: "AIO-Gle",
     description: "AI-powered search engine and information summarizer built with Next.js, Redux, and TypeScript.",
-    tags: ["Next.js", "Redux", "TypeScript", "AI"],
+    tags: ["Next.js", "Redux", "TypeScript"],
     link: "#",
     images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/sample.jpg"],
   },
   {
     title: "Cash Hub",
     description: "AI-driven savings and budgeting platform built with Next.js, TypeScript, and Redux.",
-    tags: ["Next.js", "TypeScript", "Redux", "AI"],
+    tags: ["Next.js", "TypeScript", "Redux"],
     link: "#",
     images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/sample.jpg"],
   }

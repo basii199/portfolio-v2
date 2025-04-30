@@ -1,10 +1,10 @@
 // components/hero.tsx
 'use client';
 
-import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import Link from 'next/link';
 import { Github, Linkedin, Mail, MessageSquare, Send } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export function Hero() {
 
@@ -74,7 +74,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            A dedicated frontend developer passionate about building immersive digital experiences. I combine technical expertise with apt design sense to create intuitive, performant web applications that users enjoy.
+            A dedicated frontend developer passionate about building immersive digital experiences. I combine technical expertise with apt design sense to create performant web applications that users enjoy.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -98,91 +98,27 @@ export function Hero() {
             </Link>
           </motion.div>
 
-          {/* Social Icons */}
-          {/* <motion.div
+          <motion.div
             className="flex justify-center gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
           >
-            <a 
-              href="https://github.com/basii199" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/ubokabasi-udoh/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a 
-              href="mailto:ubokabasi.o.udoh@gmail.com" 
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://wa.link/janzun" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="WhatsApp"
-            >
-              <MessageSquare className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://t.me/basiudoh" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="Telegram"
-            >
-              <Send className="w-5 h-5" />
-            </a>
-          </motion.div> */}
-
-<motion.div
-      className="flex justify-center gap-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.9 }}
-    >
-      {socialLinks.map(({ href, label, icon: Icon }) => (
-        <a
-          key={label}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 rounded-full bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-all"
-          aria-label={label}
-        >
-          <Icon className="w-5 h-5" />
-        </a>
-      ))}
-    </motion.div>
+            {socialLinks.map(({ href, label, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-all"
+                aria-label={label}
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
-      
-      {/* Animated background elements */}
-      <motion.div 
-        className="absolute inset-0 -z-10"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-      >
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl" />
-        <div className="absolute top-3/4 right-1/4 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl" />
-        <div className="absolute bottom-1/4 left-2/3 w-48 h-48 rounded-full bg-blue-500/5 blur-3xl" />
-      </motion.div>
     </section>
   );
 }
