@@ -5,34 +5,26 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "School Wallet",
-    period: "Apr 2025 - Present",
-    description: [
-      "Developed the super admin dashboard for application oversight",
-      "Integrated Contentful CMS for blog content management",
-      "Built responsive, interactive web pages"
+    "role": "Freelance Web Developer",
+    "company": "",
+    "period": "October 2024 - Present",
+    "description": [
+      "Designed and developed responsive web interfaces using React, Next.js, TypeScript, and TailwindCSS.",
+      "Communicated effectively with stakeholders to translate business needs into technical solutions, maintaining transparency and timely delivery.",
+      "Collaborated closely with team members in projects to align on goals, share responsibilities, and collectively deliver high-quality project outcomes.",
+      "Converted Figma designs into responsive, pixel-perfect interfaces for landing pages and dashboards, prioritizing usability and user experience.",
     ]
-  },
-  {
-    role: "Frontend Developer",
-    company: "Gradific",
-    period: "Apr 2025 - Present",
-    description: [
-      "Developed the super admin dashboard for application oversight",
-      "Integrated Contentful CMS for blog content management",
-      "Built responsive, interactive web pages"
-    ]
-  },
+  },  
   {
     role: "Frontend Developer",
     company: "HNG Internship",
     period: "Jan 2025 - Apr 2025",
     description: [
-      "Contributed to real-world applications in a fast-paced team environment",
-      "Collaborated on scalable user interfaces",
-      "Recognized for leadership and problem-solving skills"
-    ]
+      "Built responsive, high-performance web applications with Next.js, TypeScript, and TailwindCSS.",
+      "Elevated code quality and development speed through effective use of version control, and CI/CD practices.",
+      "Worked collaboratively in Agile teams alongside designers, devops, and product managers to ensure timely and efficient project delivery.",
+      "Earned recognition for strong leadership, strategic thinking, and effective problem-solving."
+    ]    
   }
 ];
 

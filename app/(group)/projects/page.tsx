@@ -7,7 +7,7 @@ const allProjects = [
     title: "ShopDesk",
     description: "A simplified inventory management system for small businesses built with Next.js, Redux, TypeScript.",
     tags: ["Next.js", "Redux", "TypeScript"],
-    link: "#",
+    link: "https://www.shopdesk.im/",
     images: [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758043/shopdesk-home_fxxyma.png",
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758046/shopdesk-dashboard_utywf7.png"
@@ -15,21 +15,9 @@ const allProjects = [
     featured: true
   },
   {
-    title: "Gradific",
-    description: "AI-powered grading tool for teachers and lecturers developed with Next.js and TypeScript.",
-    tags: ["Next.js", "TypeScript"],
-    link: "#",
-    images: [
-      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758037/gradific-home_vc4qau.png",
-      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758063/gradific-signup_pxn16q.png",
-      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758035/gradific-dashboard_x2ug9n.png",
-    ],
-    featured: true
-  },
-  {
     title: "School Wallet",
-    description: "Secure school fees management system built with React, Redux, and Recharts.",
-    tags: ["React", "Redux", "Recharts"],
+    description: "Secure school fees management system built with React and Recharts for data visualization.",
+    tags: ["React", "Recharts"],
     link: "#",
     images: [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758065/schoolwallet-home_yhxfxe.png",
@@ -39,20 +27,46 @@ const allProjects = [
     featured: true
   },
   {
-    title: "AI-Translator",
-    description: "Smart translation and summarization tool built using React and Chrome APIs.",
-    tags: ["React", "Chrome APIs"],
-    link: "#",
-    images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/sample.jpg"],
+    title: "Movies-Mate",
+    description: "A modern movie discovery platform built with Next.js, Supabase, and the TMDB API.",
+    tags: ["Next.js", "Supabase"],
+    link: "https://moviesmate-three.vercel.app/",
+    images: [
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746107773/moviesmate-home_uqapex.png",
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746107776/moviesmate-home2_smadlz.png",
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746107775/moviesmate-movie_t620rz.png"
+    ],
+    featured: true
+  }, 
+  {
+    title: "Gradific",
+    description: "AI-powered grading tool for teachers and lecturers developed with Next.js and TypeScript.",
+    tags: ["Next.js", "TypeScript"],
+    link: "https://gradific.com/",
+    images: [
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758037/gradific-home_vc4qau.png",
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758063/gradific-signup_pxn16q.png",
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1745758035/gradific-dashboard_x2ug9n.png",
+    ],
   },
+  {
+    title: "AI-Translator",
+    description: "Smart translation and summarization tool built using React and Chrome AI APIs.",
+    tags: ["React", "Chrome APIs"],
+    link: "https://basii199.github.io/ai-translator/",
+    images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746106667/ai-translate-home_mtves5.png"],
+  }, 
   {
     title: "Weather App",
     description: "Minimalist real-time weather application developed with React and Weather API.",
     tags: ["React", "Weather API"],
-    link: "#",
-    images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/sample.jpg"],
+    link: "https://basii199.github.io/Weather-app/",
+    images: [
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746106667/weather-app2_bu2rab.png",
+      "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746106667/weather-app1_yaandb.png"
+    ],
   },
-  {
+  /* {
     title: "AIO-Gle",
     description: "AI-powered search engine and information summarizer built with Next.js, Redux, and TypeScript.",
     tags: ["Next.js", "Redux", "TypeScript"],
@@ -65,7 +79,7 @@ const allProjects = [
     tags: ["Next.js", "TypeScript", "Redux"],
     link: "#",
     images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/sample.jpg"],
-  }
+  } */
 ];
 
 export default function ProjectsPage() {

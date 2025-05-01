@@ -7,17 +7,17 @@ export function About() {
   const expertiseCards = [
     {
       title: "Full-Stack Craftsmanship",
-      content: "I architect seamless digital experiences from pixel-perfect interfaces to robust backend systems. Every component is meticulously crafted for performance and elegance.",
+      content: "I architect seamless digital experiences from pixel-perfect interfaces to simple backend systems. Every component is meticulously crafted for performance and elegance.",
       icon: <Cpu className="w-6 h-6" />
     },
     {
       title: "Digital Alchemist",
-      content: "Transforming complex requirements into intuitive solutions. I specialize in React, Next.js and TypeScript alchemy - turning ideas into gold-standard applications.",
+      content: "Turning complex requirements into elegant solutions. I specialize in React, Next.js and TypeScript - turning ideas into gold-standard applications.",
       icon: <Zap className="w-6 h-6" />
     },
     {
       title: "User-Centric Philosophy",
-      content: "Beyond clean code, I engineer delightful interactions. My process balances technical excellence with human-centered design principles for products people love.",
+      content: "Beyond clean code, I engineer delightful interactions,balancing technical excellence with user centered principles to design products people love.",
       icon: <Palette className="w-6 h-6" />
     }
   ];
