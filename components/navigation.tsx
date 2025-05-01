@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './theme-toggle';
+//import { ThemeToggle } from './theme-toggle';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -39,8 +39,8 @@ export function Navigation() {
         transition={{ duration: 0.3 }}
       >
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold dark:text-white text-black">
-            Ubok-Abasi
+          <Link href="/" className="text-xl font-bold dark:text-white text-black">            
+            {'<< basi >>'}            
           </Link>
           {/* <RobotBuddy /> */}
           
@@ -57,7 +57,7 @@ export function Navigation() {
                 </li>
               ))}
             </ul>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
         </div>
       </motion.nav>
@@ -79,7 +79,7 @@ export function Navigation() {
           </Link>
           
           <div className="flex items-center gap-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
