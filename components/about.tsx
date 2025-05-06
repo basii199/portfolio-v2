@@ -6,18 +6,18 @@ import { Monitor, Code, Server, Palette, Cpu, Zap } from 'lucide-react';
 export function About() {
   const expertiseCards = [
     {
-      title: "Full-Stack Craftsmanship",
-      content: "I architect seamless digital experiences from pixel-perfect interfaces to simple backend systems. Every component is meticulously crafted for performance and elegance.",
+      title: "Full-Stack Engineer",
+      content: "I build reliable web applications—from responsive frontend interfaces to efficient backend systems. Every feature is implemented for speed, and usability.",
       icon: <Cpu className="w-6 h-6" />
     },
     {
-      title: "Digital Alchemist",
-      content: "Turning complex requirements into elegant solutions. I specialize in React, Next.js and TypeScript - turning ideas into gold-standard applications.",
+      title: "Frontend Specialist",
+      content: "I turn product ideas into high-performance web apps. Whether it’s a landing page or a complex dashboard, I focus on performance, accessibility, and scalability.",
       icon: <Zap className="w-6 h-6" />
     },
     {
-      title: "User-Centric Philosophy",
-      content: "Beyond clean code, I engineer delightful interactions,balancing technical excellence with user centered principles to design products people love.",
+      title: "User-Centric Approach",
+      content: "I write clean, accessible code and design intuitive interactions. My goal is to create software that's not only functional, but enjoyable to use.",
       icon: <Palette className="w-6 h-6" />
     }
   ];
@@ -31,7 +31,7 @@ export function About() {
 
   return (
     <section className="container mx-auto px-4 py-24">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -54,10 +54,10 @@ export function About() {
             className={`relative pt-12 px-6 pb-8 rounded-xl bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow ${card.title === "Digital Alchemist" ? 'md:hidden lg:block' : ''}`}
           >
             <div className='absolute top-0 -translate-y-1/2 left-1/2 transform -translate-x-1/2 flex items-center justify-center rounded-full size-16 bg-white dark:bg-gray-900/50'>
-            <div className="w-12 h-12 flex items-center justify-center rounded-full dark:bg-blue-500/20 bg-blue-600/20 border dark:border-blue-400/30 border-blue-600/30">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full dark:bg-blue-500/20 bg-blue-600/20 border dark:border-blue-400/30 border-blue-600/30">
 
-              {card.icon}
-            </div>
+                {card.icon}
+              </div>
             </div>
             <h3 className="text-xl font-semibold dark:text-white text-black mb-3 text-center">
               {card.title}
@@ -77,7 +77,7 @@ export function About() {
         className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto"
       >
         {skillPills.map((skill, index) => (
-          <div 
+          <div
             key={index}
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"
           >

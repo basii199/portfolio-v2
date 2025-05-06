@@ -39,7 +39,7 @@ export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -68,30 +68,30 @@ export function Hero() {
           />
 
           {/* Description */}
-          <motion.p 
+          <motion.p
             className="md:text-lg dark:text-gray-400 text-gray-600 mb-8 max-w-2xl mx-auto text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            A dedicated frontend developer passionate about building immersive digital experiences. I combine technical expertise with apt design sense to create performant web applications that users enjoy.
+            I'm a frontend developer passionate about creating seamless, interactive web experiences. I bring together clean code and thoughtful design to build applications that are fast, responsive, and a pleasure to use.
           </motion.p>
 
           {/* CTA Buttons */}
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <Link 
-              href="/projects" 
+            <Link
+              href="/projects"
               className="px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition-colors text-center"
             >
               View My Work
             </Link>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="px-6 py-3 border border-gray-300 dark:border-gray-600 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center"
             >
               Contact Me
