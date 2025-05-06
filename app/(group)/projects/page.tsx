@@ -37,7 +37,7 @@ const allProjects = [
       "https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746107775/moviesmate-movie_t620rz.png"
     ],
     featured: true
-  }, 
+  },
   {
     title: "Gradific",
     description: "AI-powered grading tool for teachers and lecturers developed with Next.js and TypeScript.",
@@ -55,7 +55,7 @@ const allProjects = [
     tags: ["React", "Chrome APIs"],
     link: "https://basii199.github.io/ai-translator/",
     images: ["https://res.cloudinary.com/dj5wh1pcv/image/upload/v1746106667/ai-translate-home_mtves5.png"],
-  }, 
+  },
   {
     title: "Weather App",
     description: "Minimalist real-time weather application developed with React and Weather API.",
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
             {allProjects
               .filter(project => project.featured)
               .map((project, index) => (
-                <ProjectCard 
+                <ProjectCard
                   key={project.title}
                   project={project}
                   index={index}
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
           <h2 className="text-xl md:text-2xl font-bold mb-8 dark:text-white text-black">All Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {allProjects.map((project, index) => (
-              <ProjectCard 
+              <ProjectCard
                 key={project.title}
                 project={project}
                 index={index}

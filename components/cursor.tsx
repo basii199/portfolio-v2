@@ -17,7 +17,7 @@ export function Cursor() {
     const handleLeave = () => setIsHovering(false);
 
     window.addEventListener('mousemove', moveCursor);
-    
+
     const interactiveElements = document.querySelectorAll('a, button, .interactive');
     interactiveElements.forEach(el => {
       el.addEventListener('mouseenter', handleHover);
@@ -37,13 +37,13 @@ export function Cursor() {
     <motion.div
       className="fixed top-0 left-0 pointer-events-none z-50 mix-blend-difference"
       animate={{
-        x: position.x - (isHovering ? 16 : 8),
-        y: position.y - (isHovering ? 16 : 8),
+        x: position.x - (isHovering ? 8 : 16),
+        y: position.y - (isHovering ? 8 : 16),
         scale: isHovering ? 2 : 1,
       }}
       transition={{ type: 'spring', damping: 20, stiffness: 300 }}
     >
-      <div className={`rounded-full ${isHovering ? 'w-8 h-8 bg-white/20' : 'w-4 h-4 bg-white'}`} />
+      <div className={`rounded-full ${isHovering ? 'w-4 h-4 bg-white/20' : 'w-8 h-8 bg-transparent border-2 border-[#2b7fff]'}`} />
     </motion.div>
   );
 }

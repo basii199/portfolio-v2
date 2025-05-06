@@ -29,26 +29,28 @@ export function Navigation() {
     <>
       {/* Desktop Navigation */}
       <motion.nav
-        className={`hidden md:flex fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-colors duration-300 ${
-          scrolled
-            ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
-            : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
-        }`}
+        className={`hidden md:flex fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-colors duration-300 ${scrolled
+          ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
+          : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
+          }`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold dark:text-white text-black">            
-            {'<< basi >>'}            
+          <Link
+            href="/"
+            className="text-xl font-serif italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 transition-all duration-500 hover:scale-105 dark:from-blue-300 dark:to-blue-500 dark:hover:from-blue-400 dark:hover:to-blue-600"
+          >
+            {'Basii'}
           </Link>
           {/* <RobotBuddy /> */}
-          
+
           <div className="flex items-center gap-8">
             <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <Link 
+                  <Link
                     href={item.href}
                     className="text-sm font-medium dark:text-gray-300 text-gray-600 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                   >
@@ -64,11 +66,10 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md p-4 md:hidden transition-colors duration-300 ${
-          scrolled
-            ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
-            : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md p-4 md:hidden transition-colors duration-300 ${scrolled
+          ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
+          : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
+          }`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -77,10 +78,10 @@ export function Navigation() {
           <Link href="/" className="text-xl font-bold dark:text-white text-black">
             Ubok-Abasi
           </Link>
-          
+
           <div className="flex items-center gap-4">
             {/* <ThemeToggle /> */}
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle menu"
@@ -102,7 +103,7 @@ export function Navigation() {
               <ul className="py-4 space-y-4">
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    <Link 
+                    <Link
                       href={item.href}
                       className="block px-4 py-2 text-lg font-medium dark:text-gray-300 text-gray-600 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                       onClick={() => setIsOpen(false)}
