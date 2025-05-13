@@ -16,7 +16,7 @@ export function About() {
       icon: <Zap className="w-6 h-6" />
     },
     {
-      title: "User-Centric Approach",
+      title: "User-Centric Design",
       content: "I write clean, accessible code and design intuitive interactions. My goal is to create software that's not only functional, but enjoyable to use.",
       icon: <Palette className="w-6 h-6" />
     }

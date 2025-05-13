@@ -40,9 +40,9 @@ export function Navigation() {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <Link
             href="/"
-            className="text-xl font-serif italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 transition-all duration-500 hover:scale-105 dark:from-blue-300 dark:to-blue-500 dark:hover:from-blue-400 dark:hover:to-blue-600"
+            className="text-xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 transition-all duration-500 hover:scale-105 dark:from-blue-300 dark:to-blue-500 dark:hover:from-blue-400 dark:hover:to-blue-600"
           >
-            {'Basii'}
+            {'Basi'}
           </Link>
           {/* <RobotBuddy /> */}
 
