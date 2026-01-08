@@ -1,16 +1,16 @@
 // components/navigation.tsx
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 //import { ThemeToggle } from './theme-toggle';
 
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Navigation() {
@@ -21,18 +21,19 @@ export function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
       {/* Desktop Navigation */}
       <motion.nav
-        className={`hidden md:flex fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-colors duration-300 ${scrolled
-          ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
-          : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
-          }`}
+        className={`hidden md:flex fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-colors duration-300 ${
+          scrolled
+            ? "bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10"
+            : "bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0"
+        }`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -42,7 +43,7 @@ export function Navigation() {
             href="/"
             className="text-xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 transition-all duration-500 hover:scale-105 dark:from-blue-300 dark:to-blue-500 dark:hover:from-blue-400 dark:hover:to-blue-600"
           >
-            {'Basi'}
+            {"Basi"}
           </Link>
           {/* <RobotBuddy /> */}
 
@@ -66,17 +67,21 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md p-4 md:hidden transition-colors duration-300 ${scrolled
-          ? 'bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10'
-          : 'bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0'
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md p-4 md:hidden transition-colors duration-300 ${
+          scrolled
+            ? "bg-white/80 border-b border-black/10 dark:bg-black/80 dark:border-white/10"
+            : "bg-white/0 border-b border-black/0 dark:bg-black/0 dark:border-white/0"
+        }`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold dark:text-white text-black">
-            Ubok-Abasi
+          <Link
+            href="/"
+            className="text-xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 transition-all duration-500 hover:scale-105 dark:from-blue-300 dark:to-blue-500 dark:hover:from-blue-400 dark:hover:to-blue-600"
+          >
+            {"Basi"}
           </Link>
 
           <div className="flex items-center gap-4">
@@ -86,7 +91,11 @@ export function Navigation() {
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -95,7 +104,7 @@ export function Navigation() {
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
               className="overflow-hidden"
